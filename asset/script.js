@@ -23,6 +23,8 @@ apx.addEventListener("pageBubble", function (Event, ctx) {
                     window.location.href = "https://forms.gle/LauzGsCVbD9rvot7A";
                 } else if ( label.indexOf("r$inputText") > -1 ) {
                     $W("r$white_" + $W("mlc$main").get("state").split("Layer")[1]).set("visibility","visible");
+                } else if ( label == "r$back_10" ) {
+                    $W("mlc$main").changeState("Layer9");
                 }
             }
         }
